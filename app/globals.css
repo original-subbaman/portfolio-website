@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.responsive-image {
+  width: 60px; /* Default width for small screens */
+  height: 60px; /* Default height for small screens */
+}
+
+/* Media query for large screens (adjust as needed) */
+@media screen and (min-width: 768px) {
+  .responsive-image {
+    width: 64px; /* Width for large screens */
+    height: 64px; /* Height for large screens */
+  }
+}
