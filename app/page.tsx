@@ -3,6 +3,7 @@ import { WelcomeSection } from "@/components/WelcomeSection";
 import { BioSection } from "@/components/BioSection";
 import { ProjectSection } from "@/components/ProjectSection";
 import { SkillSection } from "@/components/SkillSection";
+import { GoToTop } from "@/components/GoToTop";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <BioSection />
       <SkillSection />
       <ProjectSection />
+      <GoToTop />
     </main>
   );
 }
