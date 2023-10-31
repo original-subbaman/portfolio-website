@@ -33,12 +33,15 @@ export const WelcomeSection = () => {
         text-white 
         px-8 md:p-16 order-1 md:order-1"
       >
-        <span className="text-gray-500 font-bold text-4xl md:text-3xl">
-          Hi, I&apos;m a
+        <span className="text-gray-500 font-bold text-4xl md:text-xl font-thin fade-in-text">
+          Hi, I&apos;m{" "}
+          <span className="text-white !text-bold">Abhishek Subba.</span>
         </span>
-        <p className="text-6xl md:text-7xl md:w-1/2 mb-4">
-          Web & Mobile <br /> Developer
+        <p className="text-4xl md:text-7xl font-thin fade-in-text">A Web &</p>
+        <p className="text-4xl md:text-7xl mb-4 font-thin fade-in-text">
+          Mobile Developer
         </p>
+
         <div className="flex justify-center md:justify-start">
           <img
             src="/ic_android.png"

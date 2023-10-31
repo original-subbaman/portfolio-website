@@ -10,8 +10,10 @@ export const BioSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-24 h-full">
         <TableBio />
         <div className="max-w-xs px-4 text-center md:text-start order-1 md:order-2">
-          <h1 className="text-white text-4xl mb-8 font-bold">About Me</h1>
-          <p className="mb-4">
+          <h1 className="text-white text-4xl mb-8 font-bold fade-in-text">
+            About Me
+          </h1>
+          <p className="mb-4 fade-in-text">
             Hello! I&apos;m Abhishek Subba. Aspiring software developer who can
             help you with the following:
           </p>

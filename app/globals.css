@@ -37,3 +37,32 @@ body {
     height: 64px; /* Height for large screens */
   }
 }
+
+.fade-in-text {
+  opacity: 0;
+  animation: fadein 500ms ease-in-out forwards;
+}
+
+.fade-in-nav {
+  opacity: 0;
+  animation: fadein 1s ease-in-out forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-text:nth-child(2) {
+  animation-delay: 300ms; /* Adjust delay as needed */
+}
+
+.fade-in-text:nth-child(3) {
+  animation-delay: 600ms; /* Adjust delay as needed */
+}
