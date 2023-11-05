@@ -7,7 +7,7 @@ import { GoToTop } from "@/components/GoToTop";
 
 export default function Home() {
   return (
-    <main className=" bg-[#1B2430] h-full snap-mandatory snap-y">
+    <main className="font-SourceCodePro bg-[#1B2430] h-full snap-mandatory snap-y">
       <Navbar />
       <WelcomeSection />
       <BioSection />
