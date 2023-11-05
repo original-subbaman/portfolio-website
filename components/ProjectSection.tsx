@@ -26,7 +26,7 @@ export const ProjectSection = () => {
       </h1>
       <div
         className="flex flex-row md:flex-col items-center justify-center gap-16 mt-4 p-2
-        max-w-xs px-8 bg-[#E94560] rounded-lg shadow-lg"
+      max-w-xs px-8 bg-[#E94560] rounded-lg drop-shadow-solid border border-black border-t-2 border-l-2 border-r-4 border-b-4"
       >
         <button
           className={`hover:border-b-2 hover:text-white md:mt-4 ${
@@ -55,7 +55,7 @@ export const ProjectSection = () => {
           Web
         </button>
       </div>
-      <div className="relative w-[100%] md:w-[80%] h-[60%] mt-4 md:my-4">
+      <div className="relative w-[100%] md:w-[80%] h-[60%] mt-4 md:my-4 p  ">
         <h1 className="text-4xl mb-4 font-semibold hidden md:block text-center">
           Projects
         </h1>
@@ -63,7 +63,8 @@ export const ProjectSection = () => {
           className="relative h-full w-full rounded-lg bg-[#2C74B3] 
         overflow-auto 
         hover:overflow-scrool 
-        overflow-x-hidden"
+        overflow-x-hidden
+        drop-shadow-solid border border-zinc-950 border-t-2 border-l-2 border-r-4 border-b-4"
         >
           {currentProjectList.map((project: Project, index: number) => (
             <ProjectItem
