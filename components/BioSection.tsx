@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const BioSection = () => {
   return (
     <section
-      className="my-auto h-screen md:container-2xl  py-4 snap-start scroll-py-12"
+      className="my-auto h-max md:container-2xl  py-4 snap-start scroll-py-12"
       id="bio"
     >
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-24 h-full">
@@ -13,11 +13,11 @@ export const BioSection = () => {
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="box"
+          className="box order-2 md:order-1"
         >
           <TableBio />
         </motion.div>
-        <div className="max-w-xs px-4 text-center md:text-start order-1 md:order-2">
+        <div className="max-w-xs px-4 text-center md:text-start order-1 md:order-2 mt-20">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}

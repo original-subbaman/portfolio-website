@@ -18,7 +18,7 @@ export default function ProjectPage() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-12 h-screen">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-12 h-screen font-SourceCodePro">
       <button
         onClick={() => router.replace("/#projects")}
         className="rounded-full bg-orange-500 text-white items-center justify-center 
@@ -59,13 +59,15 @@ export default function ProjectPage() {
               <DownloadLogo />
             </a>
           )}
-          <a
-            className="rounded-lg px-4 border border-white hover:text-blue-400 hover:border-blue-400"
-            href={searchParams.get("siteLink")!}
-            target="_blank"
-          >
-            Go to site
-          </a>
+          {type === ProjectType.Web && (
+            <a
+              className="rounded-lg px-4 border border-white hover:text-blue-400 hover:border-blue-400"
+              href={searchParams.get("siteLink")!}
+              target="_blank"
+            >
+              Go to site
+            </a>
+          )}
         </div>
         <div>
           <h3 className="text-wite text-lg font-semibold">Technologies Used</h3>

@@ -93,7 +93,7 @@ export const WelcomeSection = () => {
           />
         </div>
       </div>
-      <div className="flex md:hidden order-2 mt-4 gap-4 flex-wrap">
+      <div className="flex md:hidden order-2 mt-4 gap-4 flex-wrap justify-center">
         <button className="text-white px-4 py-2 border border-purple-500 hover:bg-purple-500 rounded-md">
           <a href="#bio">About</a>
         </button>

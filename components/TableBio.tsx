@@ -1,6 +1,9 @@
 export const TableBio = () => {
   return (
-    <div className="flex justify-start order-2 md:order-1">
+    <div
+      className="flex justify-start
+     rounded-lg drop-shadow-solid border border-black border-t-2 border-l-2 border-r-8 border-b-8"
+    >
       <div className="relative overflow-x-auto shadow-md rounded-lg">
         <table className="text-sm text-left text-gray-500">
           <tbody>
