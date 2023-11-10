@@ -18,7 +18,7 @@ export const ProjectSection = () => {
 
   return (
     <section
-      className="flex flex-col md:flex-row items-center justify-center h-max px-16 gap-8 snap-center"
+      className="flex flex-col md:flex-row items-center justify-center h-screen px-16 gap-8 snap-center"
       id="projects"
     >
       <h1 className="text-4xl mb-2 font-semibold md:hidden text-center">

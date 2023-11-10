@@ -5,7 +5,10 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <nav className="w-full h-16 px-8 sticky top-0 left-0 fade-in-nav">
+    <nav
+      className="w-full h-16 px-8 sticky top-0 left-0 fade-in-nav bg-white 
+    bg-opacity-10 backdrop-filter backdrop-blur-lg border-b border-gray-200 hidden md:block"
+    >
       <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
         <Link href="/">
           <p className="text-xl">Abhishek Subba</p>

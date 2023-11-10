@@ -13,7 +13,7 @@ export const BioSection = () => {
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="box order-2 md:order-1"
+          className="box order-2 md:order-1 px-4 md:px-0"
         >
           <TableBio />
         </motion.div>
