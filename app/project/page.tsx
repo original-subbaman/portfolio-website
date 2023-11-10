@@ -18,7 +18,7 @@ export default function ProjectPage() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-12 h-screen font-SourceCodePro">
+    <div className="flex flex-col md:flex-row items-center justify-center mt-8 gap-20 h-screen font-SourceCodePro">
       <button
         onClick={() => router.replace("/#projects")}
         className="rounded-full bg-orange-500 text-white items-center justify-center 
@@ -39,13 +39,11 @@ export default function ProjectPage() {
           ></path>
         </svg>
       </button>
-      <div>
-        {type === ProjectType.Android || type === ProjectType.Flutter ? (
-          <MobileMockUp imgLink={searchParams.get("imgLink")!} />
-        ) : (
-          <DesktopMockUp imgLink={searchParams.get("imgLink")!} />
-        )}
-      </div>
+      {type === ProjectType.Android || type === ProjectType.Flutter ? (
+        <MobileMockUp imgLink={searchParams.get("imgLink")!} />
+      ) : (
+        <DesktopMockUp imgLink={searchParams.get("imgLink")!} />
+      )}
       <div className="flex flex-col flex-start h-full py-8">
         <h1 className="font-semibold text-blue-500 text-3xl md:text-4xl">
           {searchParams.get("title")}
@@ -71,21 +69,13 @@ export default function ProjectPage() {
         </div>
         <div>
           <h3 className="text-wite text-lg font-semibold">Technologies Used</h3>
-          <div className="flex mb-4 mt-2">
-            <FlutterLogo isUsed={techUsed.includes("Flutter")} />
-            <FirebaseLogo isUsed={techUsed.includes("Firebase")} />
-            {techUsed.includes("React") && (
-              <Image width="45" height="45" src="/ic_react.png" alt="React" />
-            )}
-            {techUsed.includes(TechType.bootstrap) && (
-              <Image
-                width="45"
-                height="45"
-                src="/ic_bootstrap.png"
-                alt="Bootstrap logo"
-              />
-            )}
-          </div>
+          <ul className="flex mb-4 mt-2">
+            {techUsed.map((tech, index) => (
+              <li className="mr-4" key={index}>
+                {tech}
+              </li>
+            ))}
+          </ul>
           <p className="text-white text-md font-sm max-w-sm">
             {searchParams.get("description")}
           </p>

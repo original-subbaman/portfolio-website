@@ -21,9 +21,7 @@ export const ProjectSection = () => {
       className="flex flex-col md:flex-row items-center justify-center h-screen px-16 gap-8 snap-center"
       id="projects"
     >
-      <h1 className="text-4xl mb-2 font-semibold md:hidden text-center">
-        Projects
-      </h1>
+      <h1 className="text-4xl font-semibold md:hidden text-center">Projects</h1>
       <div
         className="flex flex-row md:flex-col items-center justify-center gap-16 mt-2 p-2
       max-w-xs px-8 bg-[#E94560] rounded-lg drop-shadow-solid border border-black border-t-2 border-l-2 border-r-8 border-b-8"
