@@ -4,4 +4,6 @@ export enum TechType {
   flutter = "Flutter",
   react = "React",
   bootstrap = "Bootstrap",
+  tailwind = "Tailwind",
+  typescript = "TypeScript",
 }

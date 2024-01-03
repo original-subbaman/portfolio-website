@@ -42,6 +42,16 @@ export const projectList = [
     [TechType.react, "Javascript", TechType.bootstrap]
   ),
   new Project(
+    ProjectType.Web,
+    "Board.",
+    "https://github.com/original-subbaman/board.",
+    "",
+    "https://boardsubba.netlify.app/dashboard",
+    "A dashboard website created with React, Typescript and TailwindCSS. Click on the login button to see the home page. ",
+    "/board_website.png",
+    [TechType.react, TechType.typescript, TechType.tailwind]
+  ),
+  new Project(
     ProjectType.Flutter,
     "TapTap",
     "https://github.com/original-subbaman/typing_game",
