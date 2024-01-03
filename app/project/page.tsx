@@ -42,9 +42,9 @@ export default function ProjectPage() {
       {type === ProjectType.Android || type === ProjectType.Flutter ? (
         <MobileMockUp imgLink={searchParams.get("imgLink")!} />
       ) : (
-        <DesktopMockUp imgLink={searchParams.get("imgLink")!} />
+        <DesktopMockUp imgLink={searchParams.get("siteLink")!} />
       )}
-      <div className="flex flex-col flex-start h-full py-8">
+      <div className="flex flex-col flex-start md:h-full py-8">
         <h1 className="font-semibold text-blue-500 text-3xl md:text-4xl">
           {searchParams.get("title")}
         </h1>
