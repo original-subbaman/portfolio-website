@@ -4,11 +4,8 @@ import { motion } from "framer-motion";
 
 export const BioSection = () => {
   return (
-    <section
-      className="my-auto h-max md:container-2xl  py-4 snap-start scroll-py-12"
-      id="bio"
-    >
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-24 h-full">
+    <section className="h-full py-4 snap-center scroll-py-12" id="bio">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-24">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}

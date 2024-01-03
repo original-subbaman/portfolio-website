@@ -8,10 +8,15 @@ export const SkillSection = () => {
     "Kotlin",
     "Flutter",
     "React",
-    "HTML/CSS",
+    "HTML",
+    "CSS",
     "Tailwind",
     "SpringBoot",
     "Next.js",
+    "Node.js",
+    "Express",
+    "MySQL",
+    "AWS",
   ];
   const fadeInAnimationVariants = {
     initial: {
@@ -39,7 +44,7 @@ export const SkillSection = () => {
           {skillList.map((val: string, key: number) => {
             return (
               <motion.li
-                className="rounded-3xl border border-white px-8 py-2 text-center"
+                className="rounded-3xl border-b-4 border-r-[5px] border-black px-8 py-2 text-center bg-green-500"
                 key={key}
                 variants={fadeInAnimationVariants}
                 initial="initial"
