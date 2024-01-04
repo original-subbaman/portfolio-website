@@ -4,6 +4,7 @@ import { BioSection } from "@/components/BioSection";
 import { ProjectSection } from "@/components/ProjectSection";
 import { SkillSection } from "@/components/SkillSection";
 import { GoToTop } from "@/components/GoToTop";
+import { WorkExperience } from "@/components/WorkExperince";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <WelcomeSection />
       <BioSection />
+      <WorkExperience />
       <SkillSection />
       <ProjectSection />
       <GoToTop />
