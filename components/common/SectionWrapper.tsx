@@ -15,7 +15,9 @@ export const SectionWrapper = ({
 }: SectionWrapperProps) => (
   <section
     id={id}
-    className={`flex flex-col justify-center gap-4 text-black md:text-start md:grow px-16 ${className}`.trim()}
+    className={`flex flex-col justify-center 
+        gap-4 text-black scroll-mt-16
+        md:text-start md:grow px-16 ${className}`.trim()}
   >
     {title && <h2 className="text-gray-500 font-mono"># {title}</h2>}
     {children}

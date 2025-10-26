@@ -5,7 +5,7 @@ import { SectionWrapper } from "@/components/common/SectionWrapper";
 
 export const WelcomeSection = () => {
   return (
-    <SectionWrapper id="home">
+    <SectionWrapper id="bio">
       <motion.span
         className="text-gray-500 font-thin"
         initial={{ opacity: 0, y: -10 }}

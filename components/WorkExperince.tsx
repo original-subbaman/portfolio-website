@@ -39,7 +39,7 @@ const ExperienceHistory = [
 ];
 export const WorkExperience = () => {
   return (
-    <SectionWrapper title="Work Experience">
+    <SectionWrapper id="experience" title="Work Experience">
       {ExperienceHistory.map((element) => (
         <ExperienceCard
           key={element.id}

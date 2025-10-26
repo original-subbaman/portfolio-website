@@ -1,35 +1,72 @@
 "use client";
+import React, { useState, useEffect } from "react";
 
-import Link from "next/link";
-import React from "react";
+const NavItem = ({
+  href,
+  text,
+  active,
+}: {
+  href: string;
+  text: string;
+  active?: boolean;
+}) => (
+  <a
+    href={href}
+    className={`text-sm  ${active ? "bg-white/60 text-black font-bold " : ""}`}
+  >
+    {text}
+  </a>
+);
+
+const links = [
+  { href: "#bio", text: "Bio" },
+  { href: "#skills", text: "Skills" },
+  { href: "#experience", text: "Experience" },
+  { href: "#projects", text: "Projects" },
+  { href: "#education", text: "Education" },
+];
 
 export const Navbar = () => {
+  const [activeSection, setActiveSection] = useState<string>("");
+  console.log("🚀 ~ Navbar ~ activeSection:", activeSection);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let current = "";
+      for (const link of links) {
+        const section = document.querySelector(link.href);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom > 80) {
+            current = link.href;
+            break;
+          }
+        }
+      }
+      // If near the bottom, highlight 'Education'
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 10
+      ) {
+        current = "#education";
+      }
+      setActiveSection(current);
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav
-      className="w-full h-16 px-8 sticky top-0 left-0 fade-in-nav bg-white 
-    bg-opacity-10 backdrop-filter backdrop-blur-lg border-b border-gray-200 hidden md:block"
-    >
-      <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
-        <Link href="/">
-          <p className="text-xl">Abhishek Subba</p>
-        </Link>
-        <div className="hidden sm:flex">
-          <ul className="hidden sm:flex">
-            <li className="ml-10 border-b-2 border-transparent hover:border-white text-xl cursor-pointer">
-              <a href="#home">Home</a>
-            </li>
-            <li className="ml-10 hover:border-b text-xl">
-              <a href="#bio">Bio</a>
-            </li>
-            <li className="ml-10 hover:border-b text-xl">
-              <a href="#skills">Skills</a>
-            </li>
-            <li className="ml-10 hover:border-b text-xl">
-              <a href="#projects">Projects</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav className="container max-w-md mx-auto h-10 px-10 text-black rounded-full sticky top-0 left-0 bg-white/30 backdrop-blur-sm border border-white/60 shadow-2xl flex items-center justify-between z-[100]">
+      {links.map((link) => (
+        <NavItem
+          key={link.href}
+          href={link.href}
+          text={link.text}
+          active={activeSection === link.href}
+        />
+      ))}
     </nav>
   );
 };

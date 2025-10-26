@@ -47,7 +47,7 @@ export const SkillSection = () => {
   const infraSkills = ["AWS", "Supabase"];
 
   return (
-    <SectionWrapper title="Skills">
+    <SectionWrapper id="skills" title="Skills">
       <SkillList
         skills={frontEndSkills}
         title="Frontend"

@@ -3,7 +3,7 @@ import { EducationCard } from "./EducationCard";
 
 export const EducationSection = () => {
   return (
-    <SectionWrapper title="Education">
+    <SectionWrapper id="education" title="Education">
       <EducationCard
         school="Jain University, School of Engineering and Technology"
         degree="Bachelor of Technology (Specialization in Cloud Computing and Computer Science)"

@@ -7,7 +7,7 @@ import { ProjectItem } from "./ProjectItem";
 
 export const ProjectSection = () => {
   return (
-    <SectionWrapper title="Projects">
+    <SectionWrapper id="projects" title="Projects">
       <div>
         {projectList.map((project: Project, index: number) => (
           <ProjectItem key={index} project={project} />
