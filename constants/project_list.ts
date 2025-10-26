@@ -5,6 +5,36 @@ import { TechType } from "./tech_type";
 
 export const projectList = [
   new Project(
+    ProjectType.Web,
+    "PMMUSA School Website",
+    "https://github.com/original-subbaman/Tidings",
+    "",
+    "https://pmmusa.in",
+    "A school website created for a school in rural West Sikkim using React and Bootstrap.",
+    "/pmmusa_website.png",
+    [TechType.react, "Javascript", TechType.bootstrap]
+  ),
+  new Project(
+    ProjectType.Flutter,
+    "TapTap",
+    "https://github.com/original-subbaman/typing_game",
+    "https://drive.google.com/file/d/1JO-lAoAvYWod_7Gi8uLdVEro0uA0fbyy/view?usp=share_link",
+    "",
+    "A mobile typing game that tracks your WPM and accuracy, with local stats and a global leaderboard to compare your best scores.",
+    "/taptap_home.jpg",
+    ["Flutter", "Dart", "Firebase"]
+  ),
+  new Project(
+    ProjectType.Flutter,
+    "7 Min Protest App",
+    "https://github.com/original-subbaman/7_min_protest_app",
+    "https://drive.google.com/file/d/1TT7xiM2OxWRlhwv5vI_HXEcov7Aen1P8/view?usp=share_link",
+    "",
+    "This app aims to create a civic platform to amplify youth voices. The app aims to livestream protests in hopes of bringing like-minded individuals together by-passing geographical/national boundaries.",
+    "/protest_home.jpg",
+    ["Flutter", "Dart", "Firebase"]
+  ),
+  new Project(
     ProjectType.Android,
     "Trello Clone",
     "https://github.com/original-subbaman/ProjeManag",
@@ -30,45 +60,5 @@ export const projectList = [
     "/tiding_home.jpg",
 
     ["Android", "Kotlin"]
-  ),
-  new Project(
-    ProjectType.Web,
-    "PMMUSA School Website",
-    "https://github.com/original-subbaman/Tidings",
-    "",
-    "https://pmmusa.in",
-    "A school website created for a school in rural West Sikkim using React and Bootstrap.",
-    "/pmmusa_website.png",
-    [TechType.react, "Javascript", TechType.bootstrap]
-  ),
-  new Project(
-    ProjectType.Web,
-    "Board.",
-    "https://github.com/original-subbaman/board.",
-    "",
-    "https://boardsubba.netlify.app/dashboard",
-    "A dashboard website created with React, Typescript and TailwindCSS. Click on the login button to see the home page. ",
-    "/board_website.png",
-    [TechType.react, TechType.typescript, TechType.tailwind]
-  ),
-  new Project(
-    ProjectType.Flutter,
-    "TapTap",
-    "https://github.com/original-subbaman/typing_game",
-    "https://drive.google.com/file/d/1JO-lAoAvYWod_7Gi8uLdVEro0uA0fbyy/view?usp=share_link",
-    "",
-    "A school website created for a school in rural West SikkimA typing game where you can check how fast you can type on your phone. Your WPM and Accuracy will be recorded locally. Your best WPM and Accuracy score will be uploaded to a online leaderboard. You can check your rank and how you compare to other people on this leaderboard.",
-    "/taptap_home.jpg",
-    ["Flutter", "Dart", "Firebase"]
-  ),
-  new Project(
-    ProjectType.Flutter,
-    "7 Min Protest App",
-    "https://github.com/original-subbaman/7_min_protest_app",
-    "https://drive.google.com/file/d/1TT7xiM2OxWRlhwv5vI_HXEcov7Aen1P8/view?usp=share_link",
-    "",
-    "This app aims to create a civic platform to amplify youth voices. The app aims to livestream protests in hopes of bringing like-minded individuals together by-passing geographical/national boundaries.",
-    "/protest_home.jpg",
-    ["Flutter", "Dart", "Firebase"]
   ),
 ];
