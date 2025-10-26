@@ -1,5 +1,5 @@
 "use client";
-import { TableBio } from "./TableBio";
+import { EducationSection } from "./EducationSection";
 import { motion } from "framer-motion";
 
 export const BioSection = () => {
@@ -12,7 +12,7 @@ export const BioSection = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="box order-2 md:order-1 px-4 md:px-0"
         >
-          <TableBio />
+          <EducationSection />
         </motion.div>
         <div className="max-w-xs px-4 text-center md:text-start order-1 md:order-2 mt-20">
           <motion.div
