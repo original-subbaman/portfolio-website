@@ -33,23 +33,6 @@ export const SkillList = ({
 );
 
 export const SkillSection = () => {
-  const skillList = [
-    "Java",
-    "Android",
-    "Kotlin",
-    "Flutter",
-    "React",
-    "HTML",
-    "CSS",
-    "Tailwind",
-    "SpringBoot",
-    "Next.js",
-    "Node.js",
-    "Express",
-    "MySQL",
-    "AWS",
-  ];
-
   const frontEndSkills = [
     "React",
     "Tailwind",
@@ -64,8 +47,7 @@ export const SkillSection = () => {
   const infraSkills = ["AWS", "Supabase"];
 
   return (
-    <SectionWrapper>
-      <h2 className="font-bold">Skills</h2>
+    <SectionWrapper title="Skills">
       <SkillList
         skills={frontEndSkills}
         title="Frontend"

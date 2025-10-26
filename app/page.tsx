@@ -1,5 +1,6 @@
 import { SkillSection } from "@/components/SkillSection";
 import { WelcomeSection } from "@/components/WelcomeSection";
+import { WorkExperience } from "@/components/WorkExperince";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="flex flex-col container max-w-2xl mx-auto py-10 gap-8">
         <WelcomeSection />
         <SkillSection />
+        <WorkExperience />
       </div>
     </main>
   );
