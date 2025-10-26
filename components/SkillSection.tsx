@@ -1,5 +1,36 @@
 "use client";
+import { SectionWrapper } from "./common/SectionWrapper";
+
 import { motion } from "framer-motion";
+
+interface SkillListProps {
+  skills: string[];
+  title: string;
+  ulClassName?: string;
+}
+
+export const SkillList = ({
+  skills,
+  title,
+  ulClassName = "",
+}: SkillListProps) => (
+  <div>
+    <p className="font-thin mb-2 text-gray-500">{title}</p>
+    <ul className={`${ulClassName} text-sm`}>
+      {skills.map((val: string, key: number) => (
+        <motion.li
+          key={key}
+          initial={{ opacity: 0, filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          {val}
+        </motion.li>
+      ))}
+    </ul>
+  </div>
+);
 
 export const SkillSection = () => {
   const skillList = [
@@ -18,46 +49,38 @@ export const SkillSection = () => {
     "MySQL",
     "AWS",
   ];
-  const fadeInAnimationVariants = {
-    initial: {
-      opacity: 0,
-      y: 100,
-    },
-    animate: (index: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.05 * index,
-      },
-    }),
-  };
+
+  const frontEndSkills = [
+    "React",
+    "Tailwind",
+    "Next.js",
+    "Vue.js",
+    "Flutter",
+    "Material UI",
+  ];
+
+  const backendSkills = ["Node.js", "Express", "MySQL", "MongoDB"];
+
+  const infraSkills = ["AWS", "Supabase"];
+
   return (
-    <section
-      className="flex items-center justify-center h-screen snap-center"
-      id="skills"
-    >
-      <div>
-        <h1 className="text-4xl mb-16 font-semibold md:block text-center">
-          Skills
-        </h1>
-        <ul className="flex gap-2 flex-wrap justify-center text-lg md:w-[53rem]">
-          {skillList.map((val: string, key: number) => {
-            return (
-              <motion.li
-                className="rounded-3xl border-b-4 border-r-[5px] border-black px-8 py-2 text-center bg-green-500"
-                key={key}
-                variants={fadeInAnimationVariants}
-                initial="initial"
-                whileInView="animate"
-                custom={key}
-                viewport={{ once: true }}
-              >
-                {val}
-              </motion.li>
-            );
-          })}
-        </ul>
-      </div>
-    </section>
+    <SectionWrapper>
+      <h2 className="font-bold">Skills</h2>
+      <SkillList
+        skills={frontEndSkills}
+        title="Frontend"
+        ulClassName="flex justify-between flex-wrap"
+      />
+      <SkillList
+        skills={backendSkills}
+        title="Backend"
+        ulClassName="flex justify-between flex-wrap"
+      />
+      <SkillList
+        skills={infraSkills}
+        title="Infrastructure"
+        ulClassName="flex gap-4 flex-wrap"
+      />
+    </SectionWrapper>
   );
 };
