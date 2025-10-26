@@ -15,7 +15,7 @@ export const SkillList = ({
   ulClassName = "",
 }: SkillListProps) => (
   <div>
-    <p className="font-thin mb-2 text-gray-500">{title}</p>
+    <p className="font-thin mb-2 text-sm text-gray-500">{title}</p>
     <ul className={`${ulClassName} text-sm`}>
       {skills.map((val: string, key: number) => (
         <motion.li
