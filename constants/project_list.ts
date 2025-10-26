@@ -1,9 +1,18 @@
 import { ProjectType } from "@/constants/project_type";
 import Project from "@/models/Project";
-import { title } from "process";
 import { TechType } from "./tech_type";
 
 export const projectList = [
+  new Project(
+    ProjectType.Web,
+    "Kavita",
+    "https://github.com/original-subbaman/kavita",
+    "",
+    "https://master.d1h6ppkhusglul.amplifyapp.com/",
+    "Kavita is a small time social platform where poets can share their poetry and connect with fellow writers.",
+    "",
+    [TechType.react, "Radix-UI", "Tailwind CSS", "Supabase", "AWS Amplify"]
+  ),
   new Project(
     ProjectType.Web,
     "PMMUSA School Website",

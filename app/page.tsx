@@ -31,7 +31,15 @@ export default function Home() {
         <Divider />
 
         <EducationSection />
+
+        <Divider />
       </div>
+      <footer className="container max-w-2xl flex justify-between px-16 mx-auto pb-4 ">
+        <p className="text-xs text-gray-500">Straight out of Sikkim ❤️</p>
+        <p className="text-xs text-gray-500">
+          Built with Next.js & <br /> Tailwind CSS & Framer Motion
+        </p>
+      </footer>
     </main>
   );
 }

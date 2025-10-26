@@ -30,7 +30,7 @@ export const WelcomeSection = () => {
       <motion.div className="flex gap-4">
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/abhishek-subba-from-the-himalayas/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -48,7 +48,7 @@ export const WelcomeSection = () => {
         </a>
         {/* GitHub */}
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/original-subbaman"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -66,7 +66,7 @@ export const WelcomeSection = () => {
         </a>
         {/* Mail */}
         <a
-          href="mailto:your-email@example.com"
+          href="mailto:abhisheksubba.py@gmail.com"
           aria-label="Email"
           className="text-gray-400 hover:text-black transition-colors"
         >

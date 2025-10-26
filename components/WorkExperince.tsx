@@ -12,7 +12,7 @@ const ExperienceHistory = [
     title: "Junior Software Developer",
     company: "Reyan Consultancy Services",
     description:
-      "Built an employee tracker application with the agent built in Python, web app front end in React and backend in Node/Express",
+      "Built two full stack projects: a job portal with specific requirements for running an HR consultancy and Kalam a productivity and timesheet management application.",
     date: "June 2024 - Present",
     location: "Remote",
     technologies: ["React", "Node.js", "Express", "MySQL", "Python"],
