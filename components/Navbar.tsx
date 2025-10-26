@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const NavItem = ({
   href,
@@ -28,7 +29,6 @@ const links = [
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState<string>("");
-  console.log("🚀 ~ Navbar ~ activeSection:", activeSection);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +58,12 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="container max-w-md mx-auto h-10 px-10 text-black rounded-full sticky top-0 left-0 bg-white/30 backdrop-blur-sm border border-white/60 shadow-2xl flex items-center justify-between z-[100]">
+    <motion.nav
+      initial={{ opacity: 0, scale: 0.8, y: -30 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="container max-w-md mx-auto h-10 px-10 text-black rounded-full sticky top-0 left-0 bg-white/30 backdrop-blur-sm border border-white/60 shadow-2xl flex items-center justify-between z-[100]"
+    >
       {links.map((link) => (
         <NavItem
           key={link.href}
@@ -67,6 +72,6 @@ export const Navbar = () => {
           active={activeSection === link.href}
         />
       ))}
-    </nav>
+    </motion.nav>
   );
 };

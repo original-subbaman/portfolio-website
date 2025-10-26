@@ -16,8 +16,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
-    "react-scroll": "^1.8.9",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-scroll": "^1.8.9"
   },
   "devDependencies": {
     "@types/node": "latest",
