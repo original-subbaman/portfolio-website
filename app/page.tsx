@@ -1,9 +1,10 @@
-import { EducationSection } from "@/components/EducationSection";
-import { ProjectSection } from "@/components/ProjectSection";
-import { SkillSection } from "@/components/SkillSection";
-import { WelcomeSection } from "@/components/WelcomeSection";
+import { EducationSection } from "@/components/sections/EducationSection";
+import { ProjectSection } from "@/components/sections/ProjectSection";
+import { SkillSection } from "@/components/sections/SkillSection";
+import { WelcomeSection } from "@/components/sections/WelcomeSection";
 import { WorkExperience } from "@/components/WorkExperince";
 import { Navbar } from "@/components/Navbar";
+import CertificationSection from "@/components/sections/CertificationSection";
 
 const Divider = () => (
   <hr className="border-t border-gray-300 my-2 px-16 mx-auto" />
@@ -27,6 +28,10 @@ export default function Home() {
         <Divider />
 
         <ProjectSection />
+
+        <Divider />
+
+        <CertificationSection />
 
         <Divider />
 
