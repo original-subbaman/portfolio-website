@@ -1,5 +1,5 @@
-import { SectionWrapper } from "./common/SectionWrapper";
-import { EducationCard } from "./EducationCard";
+import { SectionWrapper } from "../common/SectionWrapper";
+import { EducationCard } from "../EducationCard";
 
 export const EducationSection = () => {
   return (

@@ -1,5 +1,5 @@
 "use client";
-import { SectionWrapper } from "./common/SectionWrapper";
+import { SectionWrapper } from "../common/SectionWrapper";
 
 import { motion } from "framer-motion";
 

@@ -2,8 +2,8 @@
 
 import { projectList } from "@/constants/project_list";
 import Project from "@/models/Project";
-import { SectionWrapper } from "./common/SectionWrapper";
-import { ProjectItem } from "./ProjectItem";
+import { SectionWrapper } from "../common/SectionWrapper";
+import { ProjectItem } from "../ProjectItem";
 
 export const ProjectSection = () => {
   return (
