@@ -13,7 +13,7 @@ const NavItem = ({
 }) => (
   <a
     href={href}
-    className={`text-sm  ${active ? "bg-white/60 text-black font-bold " : ""}`}
+    className={`text-sm  ${active ? " text-black font-bold " : ""}`}
   >
     {text}
   </a>
