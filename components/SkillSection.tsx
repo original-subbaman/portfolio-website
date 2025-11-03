@@ -46,22 +46,24 @@ export const SkillSection = () => {
 
   const infraSkills = ["AWS", "Supabase"];
 
+  const skillListStyle = "flex gap-4 md:gap-6 flex-wrap";
+
   return (
     <SectionWrapper id="skills" title="Skills">
       <SkillList
         skills={frontEndSkills}
         title="Frontend"
-        ulClassName="flex justify-between flex-wrap"
+        ulClassName={skillListStyle}
       />
       <SkillList
         skills={backendSkills}
         title="Backend"
-        ulClassName="flex justify-between flex-wrap"
+        ulClassName={skillListStyle}
       />
       <SkillList
         skills={infraSkills}
         title="Infrastructure"
-        ulClassName="flex gap-4 flex-wrap"
+        ulClassName={skillListStyle}
       />
     </SectionWrapper>
   );
