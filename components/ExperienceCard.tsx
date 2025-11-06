@@ -18,9 +18,9 @@ export const ExperienceCard = ({
   technologies,
 }: ExperienceCardProps) => {
   return (
-    <BlurDiv className="bg-white rounded-lg w-full py-2 px-0 transition-transform duration-300 hover:translate-x-4">
+    <BlurDiv className="bg-white dark:bg-transparent rounded-lg w-full py-2 px-0 transition-transform duration-300 hover:translate-x-4">
       <div className="mb-1">
-        <span className="font-semibold text-base text-gray-800">
+        <span className="font-semibold text-base text-gray-800 dark:text-gray-200">
           {role} at {company}{" "}
         </span>
         <div className="flex items-center gap-2">

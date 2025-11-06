@@ -14,9 +14,11 @@ export const EducationCard = ({
   location,
 }: EducationCardProps) => {
   return (
-    <BlurDiv className="bg-white py-4 w-full">
+    <BlurDiv className="bg-white dark:bg-transparent py-4 w-full">
       <div className="flex justify-between items-center mb-1">
-        <span className="font-semibold text-base text-gray-800">{school}</span>
+        <span className="font-semibold text-base text-gray-800 dark:text-gray-200">
+          {school}
+        </span>
       </div>
       <div className="flex items-center gap-2 mb-1">
         <span className="text-xs text-gray-500">{degree}</span>

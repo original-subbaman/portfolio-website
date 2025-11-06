@@ -12,7 +12,7 @@ const Divider = () => (
 
 export default function Home() {
   return (
-    <main className="font-SourceCodePro bg-white min-h-screen w-full py-4">
+    <main className="font-SourceCodePro bg-white dark:bg-gray-900 dark:text-white min-h-screen w-full py-4">
       <Navbar />
       <div className="flex flex-col container max-w-2xl mx-auto py-10 gap-8">
         <WelcomeSection />

@@ -13,7 +13,9 @@ const NavItem = ({
 }) => (
   <a
     href={href}
-    className={`text-sm  ${active ? " text-black font-bold " : ""}`}
+    className={`text-sm  ${
+      active ? " text-black  dark:text-white font-bold " : ""
+    }`}
   >
     {text}
   </a>
@@ -62,7 +64,12 @@ export const Navbar = () => {
       initial={{ opacity: 0, scale: 0.8, y: -30 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="container max-w-md mx-auto h-10 px-10 text-black rounded-full sticky top-0 left-0 bg-white/30 backdrop-blur-sm border border-white/60 shadow-2xl flex items-center justify-between z-[100]"
+      className="container max-w-md mx-auto h-10 px-10 
+      text-black dark:text-gray-200 rounded-full 
+      sticky top-0 left-0 
+      bg-white/30 backdrop-blur-sm border border-white/60 shadow-2xl 
+      dark:bg-black/30 dark:border-white/10 dark:shadow-xl
+      flex items-center justify-between z-[100]"
     >
       {links.map((link) => (
         <NavItem

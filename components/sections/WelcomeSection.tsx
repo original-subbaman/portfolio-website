@@ -2,20 +2,26 @@
 
 import { motion } from "framer-motion";
 import { SectionWrapper } from "@/components/common/SectionWrapper";
+import ThemeToggleButton from "../ThemeToggleButton";
 
 export const WelcomeSection = () => {
   return (
     <SectionWrapper id="bio">
-      <motion.span
-        className="text-gray-500 font-thin"
-        initial={{ opacity: 0, y: -10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        viewport={{ once: true }}
-      >
-        Hi, I&apos;m{" "}
-        <span className=" text-black !text-bold">Abhishek Subba.</span>
-      </motion.span>
+      <div className="flex justify-between items-center">
+        <motion.span
+          className="text-gray-500 font-thin"
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          viewport={{ once: true }}
+        >
+          Hi, I&apos;m{" "}
+          <span className=" text-black dark:text-white !text-bold">
+            Abhishek Subba.
+          </span>
+        </motion.span>
+        <ThemeToggleButton />
+      </div>
       <motion.p
         className="text-sm"
         initial={{ opacity: 0, filter: "blur(8px)" }}
@@ -34,7 +40,7 @@ export const WelcomeSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
-          className="text-gray-400 hover:text-black transition-colors"
+          className="text-gray-400 hover:text-black dark:hover:text-white transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +58,7 @@ export const WelcomeSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
-          className="text-gray-400 hover:text-black transition-colors"
+          className="text-gray-400 hover:text-black dark:hover:text-white transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +74,7 @@ export const WelcomeSection = () => {
         <a
           href="mailto:abhisheksubba.py@gmail.com"
           aria-label="Email"
-          className="text-gray-400 hover:text-black transition-colors"
+          className="text-gray-400 hover:text-black dark:hover:text-white transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

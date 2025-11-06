@@ -6,9 +6,13 @@ interface ProjectItemProps {
 
 export const ProjectItem = ({ project }: ProjectItemProps) => {
   return (
-    <BlurDiv className="bg-white rounded-lg py-4 mb-4 max-w-2xl w-full transition-transform duration-300 hover:translate-x-4 ">
+    <BlurDiv
+      className="bg-white dark:bg-transparent 
+    rounded-lg py-4 mb-4 max-w-2xl 
+    w-full transition-transform duration-300 hover:translate-x-4 "
+    >
       <div className="flex justify-between items-center mb-1">
-        <span className="font-semibold text-base text-gray-800">
+        <span className="font-semibold text-base text-gray-800 dark:text-gray-200">
           {project.title}
         </span>
         <div className="flex gap-4">

@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="snap-mandatory snap-y scroll-smooth">
+    <html lang="en" className="snap-mandatory snap-y scroll-smooth dark">
       <body className={poppins.className}>{children}</body>
     </html>
   );

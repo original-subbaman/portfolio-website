@@ -16,10 +16,12 @@ export const SectionWrapper = ({
   <section
     id={id}
     className={`flex flex-col justify-center 
-        gap-4 text-black scroll-mt-16
+        gap-4 text-black dark:text-white scroll-mt-16
         md:text-start md:grow px-16 ${className}`.trim()}
   >
-    {title && <h2 className="text-gray-500 font-mono"># {title}</h2>}
+    {title && (
+      <h2 className="text-gray-500 dark:text-gray-400 font-mono"># {title}</h2>
+    )}
     {children}
   </section>
 );
