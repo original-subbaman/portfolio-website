@@ -3,13 +3,17 @@ import { LuSun } from "react-icons/lu";
 import { useState, useEffect } from "react";
 
 const ThemeToggleButton = () => {
-  const [theme, setTheme] = useState(
-    localStorage.theme === "dark" ||
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    const savedTheme =
+      localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ? "dark"
-      : "light"
-  );
+        ? "dark"
+        : "light";
+    setTheme(savedTheme);
+  }, []);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
