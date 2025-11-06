@@ -29,9 +29,10 @@ export const WelcomeSection = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        I'm a full-stack developer specializing in building scalable web
-        applications with React/Vue.js on the frontend and Node.js/Express on
-        the backend.
+        I'm a full-stack developer with strong proficiency in React.js, Node.js,
+        and Express, experienced in both relational (MySQL) and NoSQL (MongoDB)
+        databases. Certified as an AWS Developer Associate, with a focus on
+        building scalable, efficient, and cloud-based solutions.
       </motion.p>
       <motion.div className="flex gap-4">
         {/* LinkedIn */}
